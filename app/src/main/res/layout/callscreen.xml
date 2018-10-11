@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ffffffff"
+    android:orientation="vertical"
+    android:weightSum="5">
+
+    <RelativeLayout
+        android:id="@+id/relativeLayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="3"
+        android:background="@android:color/darker_gray"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:id="@+id/remoteVideo"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:orientation="horizontal">
+
+
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/localVideo"
+            android:layout_width="150dp"
+            android:layout_height="200dp"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentTop="true" />
+
+
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/remoteUser"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="top|start"
+
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="40dp"
+
+        android:text="aa"
+        android:background="#40000000"
+        android:textSize="25sp" />
+
+    <TextView
+        android:id="@+id/callState"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="top"
+        android:text="Ringing"
+        android:textAllCaps="true"
+        android:textSize="16sp" />
+
+    <TextView
+        android:id="@+id/callDuration"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="top"
+        android:layout_marginBottom="8dp"
+        android:layout_marginTop="18dp"
+        android:text="00:00"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:textSize="16sp" />
+    <ImageButton
+        android:id="@+id/btndinle"
+        android:layout_width="65dp"
+        android:layout_height="65dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentStart="true"
+        android:layout_gravity="bottom|left"
+        android:layout_marginBottom="15dp"
+        android:layout_marginStart="10dp"
+        android:background="@drawable/buttonshape"
+        android:src="@drawable/ic_mic_black_24dp"
+        android:text="Button"
+        android:shadowDx="0"
+        android:shadowDy="0"
+        android:shadowRadius="5"
+        app:layout_anchorGravity="bottom|left" />
+
+    <TextView
+        android:id="@+id/txtkonus"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginBottom="40dp"
+        android:layout_marginEnd="100dp"
+        android:layout_marginLeft="10dp"
+
+        android:layout_marginRight="10dp"
+        android:layout_marginStart="100dp"
+        android:layout_marginTop="430dp"
+        android:background="#CC000000"
+        android:text=""
+        android:textColor="@color/off_white"
+
+        />
+
+    <ImageButton
+        android:id="@+id/hangupButton"
+        android:layout_width="65dp"
+        android:layout_height="65dp"
+        android:layout_alignParentEnd="true"
+        android:layout_alignTop="@+id/btndinle"
+        android:layout_gravity="end|bottom"
+        android:layout_marginBottom="15dp"
+        android:layout_marginEnd="10dp"
+        android:background="@drawable/buttonshape"
+        android:paddingBottom="20dp"
+        android:paddingTop="20dp"
+        android:src="@drawable/ic_call_end_black_24dp"
+        android:text="END call"
+        android:textSize="20sp"
+
+        app:layout_anchorGravity="bottom|end" />
+
+
+
+
+</android.support.design.widget.CoordinatorLayout>
